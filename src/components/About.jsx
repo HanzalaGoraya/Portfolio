@@ -10,7 +10,7 @@ const About = () => (
       Software Engineer with over 2 years of experience delivering innovative technology solutions and scalable services in full-stack development.
       Demonstrated expertise in industry-defining projects using MERN and Vue.js, with a strong foundation in object-oriented design, algorithm
       design, and data structures. Adept at cross-disciplinary collaboration, problem solving, and optimising distributed systems for high performance.
-      Committed to customer obsession, equal opportunities, and contributing to a diverse workforce in agile environments.
+      Committed to customer obsession, equal opportunities, and contributing to a diverse workforce in agile environments.</p>
         <br/><br/>
       Key Achievements:<br/>
       <ul><li>Led the development of scalable solutions using the MERN stack and Vue.js, consistently delivering high-impact features on tight deadlines.</li>
@@ -19,7 +19,7 @@ const About = () => (
       <li>Collaborated seamlessly with cross-functional teams, driving innovation through creative problem-solving and agile methodologies.</li>
       <li>Delivered industry-defining projects that exceeded client expectations and set new benchmarks for quality and efficiency.</li> </ul>
      Values:<br/><br/>
-      Passionate about customer satisfaction, inclusivity, and fostering diversity within dynamic, agile work environments.
+      <p></p>Passionate about customer satisfaction, inclusivity, and fostering diversity within dynamic, agile work environments.
    
     </p>
   </section>
