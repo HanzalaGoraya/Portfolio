@@ -121,7 +121,7 @@ useEffect(()=>{
   console.log(res.secret);
   return res.secret; 
 }
-OPENROUTER_API_KEY=fetchSecret();
+OPENROUTER_API_KEY=fetchSecret().toString();
 })
 
   async function sendToOpenRouter(chatHistory) {
