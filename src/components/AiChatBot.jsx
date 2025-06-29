@@ -118,9 +118,7 @@ export default function AiChatBot() {
 useEffect(()=>{
   async function fetchSecret() {
   const res = await axios.get("https://privatekey-xfvz.onrender.com/api/get-secret");
-  OPENROUTER_API_KEY=res.data.secret;
-
-  
+  OPENROUTER_API_KEY=res.data.secret;  
   return res.data.secret; 
 }
  fetchSecret();
