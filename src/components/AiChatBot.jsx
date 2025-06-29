@@ -1,7 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useState,useEffect, useRef } from "react";
+import axios from "axios";
 
-// Replace with your actual OpenRouter API key (get it from https://openrouter.ai/keys)
-const OPENROUTER_API_KEY = "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"; // 
+
+var OPENROUTER_API_KEY = ""; // 
 
 // Use a currently available free model from https://openrouter.ai/models
 const MODEL = "deepseek/deepseek-r1-0528:free"; // Or another free model ID if you prefer
@@ -114,6 +115,14 @@ export default function AiChatBot() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const messagesRef = useRef(null);
+useEffect(()=>{
+  async function fetchSecret() {
+  const res = await axios.get("https://privatekey-xfvz.onrender.com/api/get-secret");
+  console.log(res.secret);
+  return res.secret; 
+}
+OPENROUTER_API_KEY=fetchSecret();
+})
 
   async function sendToOpenRouter(chatHistory) {
     const messages = [
