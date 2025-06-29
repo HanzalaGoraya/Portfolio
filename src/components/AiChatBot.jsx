@@ -118,11 +118,14 @@ export default function AiChatBot() {
 useEffect(()=>{
   async function fetchSecret() {
   const res = await axios.get("https://privatekey-xfvz.onrender.com/api/get-secret");
-  console.log(res.secret);
-  return res.secret; 
+  OPENROUTER_API_KEY=res.data.secret;
+
+  
+  return res.data.secret; 
 }
-OPENROUTER_API_KEY=fetchSecret().toString();
-})
+ fetchSecret();
+
+},[]);
 
   async function sendToOpenRouter(chatHistory) {
     const messages = [
