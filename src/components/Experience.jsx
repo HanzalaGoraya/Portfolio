@@ -22,7 +22,7 @@ const Experience = () => (
       </li>
       <li style={{ marginTop: 16 }}>
         <b>Business Assistant | DHA Auto Solutions</b> <br />
-        01/2024 – 05/2025 <br />
+        01/2024 – Date <br />
         - Managed online booking systems and revamped website design.<br />
         - Proposed digital growth strategies focused on customer retention.<br />
         - Refactored front-end code using JavaScript and React.<br />
