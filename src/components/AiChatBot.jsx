@@ -6,7 +6,7 @@ var OPENROUTER_API_KEY = ""; //
 
 // Use a currently available free model from https://openrouter.ai/models
 //const MODEL = "deepseek/deepseek-r1-0528:free";
-const MODEL = "meta-llama/llama-3.1-8b-instruct:free"; // Or another free model ID if you prefer
+const MODEL = "openai/gpt-4o"; // Or another free model ID if you prefer
 
 
 const siteContext = `
