@@ -5,7 +5,8 @@ import axios from "axios";
 var OPENROUTER_API_KEY = ""; // 
 
 // Use a currently available free model from https://openrouter.ai/models
-const MODEL = "deepseek/deepseek-r1-0528:free"; // Or another free model ID if you prefer
+//const MODEL = "deepseek/deepseek-r1-0528:free";
+const MODEL = "https://api.deepseek.com"; // Or another free model ID if you prefer
 
 
 const siteContext = `
